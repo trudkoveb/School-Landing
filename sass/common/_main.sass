@@ -1,0 +1,602 @@
+.main-content
+  padding-top: 220px
+  @media (#{$max_tablets})
+    padding-top: 50px
+  .certificate
+    margin-bottom: -80px
+    position: relative
+    z-index: 2
+    .wrapper
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      justify-content: space-between
+      @media (#{$max_ipad})
+          flex-wrap: wrap
+          padding-left: 20px
+      .certificate-text
+        @media (#{$max_ipad})
+          margin-bottom: 30px
+        .info
+          font-family: $font-light
+          font-size: 18px
+          color: $color-text-reg
+          margin-top: 0
+        ul
+          display: -webkit-flex
+          display: -moz-flex
+          display: -ms-flex
+          display: -o-flex
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          align-items: center
+          @media (#{$max_ipad})
+            flex-wrap: wrap
+          li
+            span
+              font-family: $font-light
+              color: #1d1d1d
+              display: inline-block
+              vertical-align: middle
+              &:first-child
+                font-size: 30px
+                margin-right: 12px
+                line-height: 30px
+              &:last-child
+                font-size: 20px
+                line-height: 20px
+                padding-bottom: 2px
+      .certificate-image
+        @media (#{$max_ipad})
+          margin: 0 auto
+        @media (#{$max_phones})
+          img
+            width: 90%
+  .info-about-pdft
+    background-color: $color-light-bg
+    position: relative
+    z-index: 3
+    padding-top: 120px
+    padding-bottom: 70px
+    .info
+      font-family: $font-light
+      font-size: 16px
+      color: $color-text-reg
+      margin: 0
+    .hidden-info
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      padding-top: 50px
+      .hidden-info-title
+        width: 48%
+        padding: 10px
+        height: 101px
+        overflow: hidden
+        cursor: pointer
+        background-color: #fff
+        margin-bottom: 50px
+        @media (#{$max_ipad})
+          height: auto
+          width: 100%
+        @media (#{$max_laptop})
+          height: 78px
+        &.open
+          overflow: visible
+          height: 100%
+          .hidden-info-wrapper
+            border: 1px solid  #d2a75b
+            padding-left: 25px
+            padding-bottom: 45px
+            @media (#{$max_ipad})
+              padding-left: 10px
+              border: none
+              word-wrap: break-word
+            .title
+              color: #d2a75b
+              padding-left: 0
+              padding-bottom: 15px
+              &:after
+                background: url(../img/icons/arrow-down-gold.png) no-repeat center/auto 50%
+            .hidden-info-element
+              display: block
+              p
+                font-family: $font-light
+                font-size: 15px
+                color: $color-text-reg
+              .sub-title
+                font-family: $font-bold
+              ul
+                li
+                  font-family: $font-light
+                  font-size: 15px
+                  color: $color-text-reg
+                  position: relative
+                  padding-left: 15px
+                  &:before
+                    content: ''
+                    display: block
+                    width: 7px
+                    height: 2px
+                    background-color: #929292
+                    top: 11px
+                    left: 0
+                    position: absolute
+        .hidden-info-wrapper
+          border: 1px solid  #cfcfcf
+          @media (#{$max_ipad})
+            border: none
+          .title
+            font-family: $playfair-reg
+            font-size: 26px
+            color: $color-text-reg
+            margin: 0
+            padding: 24px 0
+            padding-left: 25px
+            position: relative
+            &:after
+              content: ''
+              display: block
+              width: 24px
+              height: 12px
+              background: url(../img/icons/arrow-down.png) no-repeat center/auto 50%
+              position: absolute
+              top: 37px
+              right: 25px
+              @media (#{$max_laptop})
+                top: 34px
+                right: 2px
+              @media (#{$max_ipad})
+                top: 21px
+                right: -10px
+            @media (#{$max_ipad})
+              font-size: 18px
+              padding: 15px 0
+              padding-left: 10px
+              padding-right: 20px
+            @media (#{$max_laptop})
+              font-size: 16px
+              padding-right: 10px
+          .hidden-info-element
+            display: none
+  .development-pvk
+    background-image: url("../img/bg/develop-pvk-bg.jpg")
+    background-size: cover
+    padding-top: 100px
+    padding-bottom: 40px
+    &.podft
+      background-image: url("../img/bg/podft-pvk-bg.jpg")
+      background-color: #fff
+    .wrapper
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      @media (#{$max_ipad})
+        flex-wrap: wrap
+      div
+        width: 50%
+        @media (#{$max_ipad})
+          width: 100%
+        &:first-child
+          border-right: 1px solid  #fff
+          padding-bottom: 100px
+          @media (#{$max_ipad})
+            padding-right: 20px
+            border-right: none
+        &:last-child
+          padding-left: 120px
+          @media (#{$max_ipad})
+            padding-left: 0
+        .title
+          font-family: $playfair-bold
+          font-size: 30px
+          margin-bottom: 35px
+        p
+          font-family: $font-light
+          color: #fff
+          font-size: 18px
+          margin-bottom: 50px
+        a
+          display: inline-block
+          color: #fff
+  .lectors
+    padding-top: 120px
+    @media (#{$max_ipad})
+      padding-left: 20px
+      padding-right: 20px
+    @media (#{$max_ipad})
+      padding-left: 0
+      padding-right: 0
+    .lector
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      @media (#{$max_ipad})
+        flex-wrap: wrap
+      &:nth-child(2)
+        margin-bottom: 130px
+        @media (#{$max_ipad})
+          margin-bottom: 20px
+      .lector-img
+        margin-right: 90px
+        @media (#{$max_ipad})
+          margin-right: 30px
+      .lector-info
+        p
+          color: $color-text-reg
+          span
+            font-family: sans-serif
+            font-size: 12px
+          @media (#{$max_ipad})
+            padding-right: 20px
+        .name
+          font-family: $playfair-bold
+          font-size: 30px
+        .title
+          font-family: $font-reg
+          font-size: 15px
+        .text
+          font-family: $font-light
+          font-size: 16px
+  .schedule
+    padding-top: 115px
+    padding-bottom: 130px
+    @media (#{$max_ipad})
+      padding-left: 20px
+      padding-right: 20px
+    @media (#{$max_ipad})
+      padding-left: 0
+      padding-right: 0
+    &.podft
+      padding-top: 0
+    .shedule-scheme
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      @media (#{$max_ipad})
+        flex-wrap: wrap
+      .subtitle
+        font-family: $playfair-bold
+        font-size: 30px
+        color: $color-text-reg
+        margin-bottom: 45px
+        span
+          font-family: $playfair-reg
+          font-size: 45px
+      ul
+        position: relative
+        &:before
+          content: ''
+          display: block
+          width: 2px
+          height: 100%
+          border-left: 2px dashed $color-orange
+          position: absolute
+          top: 0
+          left: 9px
+        li
+          font-size: 16px
+          color: $color-text-reg
+          font-family: $font-light
+          margin-bottom: 35px
+          position: relative
+          padding-left: 40px
+          &:last-child
+            margin-bottom: 0
+          &:before
+            content: ''
+            display: block
+            background: url(../img/icons/shedule-list-style.png) no-repeat center/auto 50%;
+            width: 32px
+            height: 34px
+            position: absolute
+            top: -7px
+            left: -6px
+      .total
+        margin-top: 40px
+        font-family: $playfair-bold
+        font-size: 30px
+        margin-left: 40px
+        margin-bottom: 0
+      .firstPart
+        width: 50%
+        @media (#{$max_ipad})
+          width: 100%
+        .total
+          color: $color-orange
+      .secondPart
+        width: 50%
+        @media (#{$max_ipad})
+          width: 100%
+        .total
+          color: $color-text-reg
+          border-top: 2px solid  $color-orange
+          padding-top: 45px
+  .reviews
+    background-color: $color-light-bg
+    padding-top: 115px
+    padding-bottom: 125px
+    @media (#{$max_laptop})
+      padding-left: 20px
+      padding-right: 20px
+    @media (#{$max_ipad})
+      padding-left: 0
+      padding-right: 0
+    .owl-carousel
+      .slide
+        background-color: #fff
+        width: 345px
+        margin-right: 45px
+        padding: 30px
+        padding-bottom: 65px
+        @media (#{$max_ipad})
+          width: 100%
+        p
+          color: $color-text-reg
+        .title
+          font-family: $font-reg
+          font-size: 22px
+        .text
+          font-family: $font-light
+          font-size: 15px
+          margin-bottom: 0
+  .actual-meetings
+    padding-top: 120px
+    padding-bottom: 75px
+    background-color: $color-light-bg
+    @media (#{$max_ipad})
+      padding-left: 20px
+      padding-right: 20px
+    @media (#{$max_ipad})
+      padding-left: 0
+      padding-right: 0
+    .meetings
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      @media (#{$max_laptop})
+        flex-wrap: wrap
+      .meetings-wrapper
+        height: 420px
+        width: 253px
+        margin-right: 40px
+        background-color: #fff
+        position: relative
+        @media (#{$max_laptop})
+          margin: 20px auto
+        .date
+          position: absolute
+          top: 15px
+          left: 20px
+          color: #fff
+          font-family: $font-semibold
+          .month
+            font-size: 39px
+            margin: 0
+          span
+            font-size: 16px
+          &:after
+            content: ''
+            display: block
+        .content
+          padding-left: 20px
+          .theme-name
+            margin: 35px 0
+            a
+              font-family: $font-reg
+              color: #3e3e3e
+              font-size: 15px
+              text-decoration: none
+              &:hover
+                text-decoration: underline
+        button
+          background-color: #fff
+          position: absolute
+          bottom: 45px
+          left: 20px
+    .sales
+      margin-top: 75px
+      font-size: 18px
+      p
+        margin: 0
+        font-family: $font-light
+        span
+          font-family: $font-semibold
+        &:first-child
+          margin-bottom: 15px
+  .advantages
+    padding-top: 130px
+    padding-bottom: 200px
+    @media (#{$max_ipad})
+      padding-right: 20px
+      padding-left: 20px
+    @media (#{$max_ipad})
+      padding-left: 0
+      padding-right: 0
+    table
+      width: 100%
+      border-collapse: collapse
+      text-align: left
+      tr
+        td
+          border: 1px solid  #cfcfcf
+          padding-left: 45px
+          height: 185px
+          font-family: $font-reg
+          font-size: 18px
+          color: $color-text-reg
+          width: 33.3%
+          cursor: pointer
+          @media (#{$max_ipad})
+            display: block
+            width: 100%
+            padding: 50% 0
+            text-align: center
+          &:hover
+            -webkit-box-shadow: 2px 3px 8px 7px #f5f5f5
+            box-shadow: 2px 3px 8px 7px #f5f5f5
+            border: none
+            .hide
+              display: block
+          .hide
+            display: none
+            font-family: $font-light
+            font-size: 15px
+
+
+
+
+.pvk-table
+  background-color: #fff
+  @media (#{$max_ipad})
+    margin-top: 50px
+  .wrapper
+    position: relative
+    table
+      width: 100%
+      -webkit-box-shadow: 2px 2px 14px 4px #ebebed
+      box-shadow: 2px 2px 14px 4px #ebebed
+      border-collapse: collapse
+      position: absolute
+      top: -355px
+      background-color: #fff
+      margin-bottom: 610px
+      @media (#{$max_laptop})
+        position: relative
+        top: 0
+        margin-bottom: 50px
+      tr
+        &:first-child
+          td
+            height: 400px
+            @media (#{$max_ipad})
+              height: auto
+            &:first-child
+              .hidden-info:before
+                background: url(../img/icons/pvk-a.png) no-repeat center/auto 50%
+                width: 66px
+                height: 64px
+            &:nth-child(2)
+              border-left: 1px solid  #c7c7c7
+              border-bottom: 1px solid  #c7c7c7
+              @media (#{$max_ipad})
+                border-left: none
+              .hidden-info:before
+                background: url(../img/icons/pvk-b.png) no-repeat center/auto 50%
+                width: 72px
+                height: 72px
+        &:last-child
+          td
+            height: 464px
+            @media (#{$max_ipad})
+              height: auto
+            .about
+              margin-top: 30px
+            &:first-child
+              border-right: 1px solid  #c7c7c7
+              border-top: 1px solid  #c7c7c7
+              @media (#{$max_ipad})
+                border-right: none
+                border-top: none
+              .hidden-info:before
+                background: url(../img/icons/pvk-c.png) no-repeat center/auto 50%
+                width: 58px
+                height: 64px
+            &:nth-child(2)
+              .hidden-info
+                cursor: default
+                &:before
+                  background: url(../img/icons/pvk-d.png) no-repeat center/auto 50%
+                  width: 58px
+                  height: 64px
+                &:after
+                  display: none
+        td
+          width: 50%
+          padding: 80px
+          padding-right: 50px
+          vertical-align: top
+          color: $color-text-reg
+          position: relative
+          @media (#{$max_ipad})
+            display: block
+            width: 100%
+            border-bottom: 1px solid  #c7c7c7
+            padding: 20px
+          @media (#{$max_tablets})
+            padding: 20px
+            padding-right: 40px
+          .hidden-info
+            position: relative
+            font-family: $playfair-bold
+            font-size: 30px
+            margin: 0
+            cursor: pointer
+            padding-left: 50px
+            &.slick:not(.empty)
+              color: #d2a75b
+              &:after
+                background: url(../img/icons/arrow-down-gold.png) no-repeat center/auto 50%
+            &:after
+              content: ''
+              display: block
+              width: 24px
+              height: 12px
+              background: url(../img/icons/arrow-down.png) no-repeat center/auto 50%
+              position: absolute
+              top: 15px
+              right: 0
+            &:before
+              content: ''
+              display: block
+              position: absolute
+              top: -14px
+              left: -17px
+          .subtitle
+            font-family: $playfair-reg
+            font-size: 20px
+            margin-top: 10px
+          .bold
+            font-family: $font-semibold
+            margin-bottom: 90px
+            margin-top: 10px
+            @media (#{$max_tablets})
+              margin-bottom: 100px
+          .about
+            margin-top: 43px
+            margin-bottom: 0
+          p
+            font-family: $font-light
+            font-size: 16px
+          .hide
+            display: none
+          button
+            background-color: #fff
+            position: absolute
+            bottom: 80px
+            @media (#{$max_ipad})
+              position: relative
+              bottom: 0

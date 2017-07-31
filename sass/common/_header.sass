@@ -1,0 +1,289 @@
+header
+  background-image: url("../img/bg/main-header-bg.jpg")
+  background-size: cover
+  &.podft-page
+    background-image: url("../img/bg/podft-header-bg.jpg")
+  &.pvk-page
+    background-image: url("../img/bg/pvk-header-bg.jpg")
+    background-position: -53px
+    background-repeat: no-repeat
+    @media (#{$max_laptop})
+      padding-bottom: 50px
+    .sub-header
+      .sub-title
+        margin: 40px 0
+      .sub-header__list-wrapper
+        align-items: inherit
+        a
+          margin-top: 127px
+          background-color: rgba(225, 192, 135, .7);
+          padding-right: 70px
+          @media (#{$max_ipad})
+            margin-top: 20px
+          &:before
+            right: 10px
+            left: auto
+            background: url("../img/icons/pvk-docs.png") no-repeat center/auto 50%;
+          &:after
+            left: 21px
+            right: auto
+            background: url("../img/icons/arrow-right.png") no-repeat center/auto 50%;
+            transform: rotate(180deg)
+  .header-topbar
+    background-color: rgba(255, 255, 255, .4)
+    padding: 20px 0
+    .wrapper
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      align-items: center
+      @media (#{$max_ipad})
+        flex-wrap: wrap
+      .header-logo
+        width: 20%
+        @media (#{$max_ipad})
+          width: 100%
+          text-align: center
+          margin-bottom: 50px
+        img
+          width: 100%
+          @media (#{$max_ipad})
+            width: 80%
+      .header-nav
+        width: 80%
+        text-align: right
+        @media (#{$max_ipad})
+          width: 100%
+          text-align: center
+        ul
+          li
+            display: inline-block
+            margin-right: 38px
+            @media (#{$max_laptop})
+                margin-right: 10px
+            @media (#{$max_ipad})
+              display: block
+              margin-right: 0
+              margin-bottom: 10px
+            &:last-child
+              margin-right: 0
+            a
+              font-family: $font-light
+              font-size: 16px
+              color: $color
+              text-decoration: none
+              border-bottom: 1px solid  #c6c6c6
+              @media (#{$max_laptop})
+                font-size: 12px
+              @media (#{$max_ipad})
+                font-size: 16px
+              &.active
+                text-decoration: none
+                border-bottom: none
+  .sub-header
+    padding-top: 108px
+    position: relative
+    height: 1035px
+    line-height: 1.4
+    @media (#{$max_tablets--landscape})
+      height: auto
+    @media (#{$max_ipad})
+      padding-left: 20px
+    .sub-title
+      font-family: $playfair-bold
+      font-size: 24px
+      color: $color-text-reg
+      margin-top: 30px
+      margin-bottom: 70px
+    .sub-header__list-wrapper
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      align-items: flex-end
+      justify-content: space-between
+      @media (#{$max_ipad})
+          flex-wrap: wrap
+      ul
+        li
+          font-family: $font-light
+          font-size: 18px
+          color: $color-text-reg
+          position: relative
+          padding-left: 22px
+          margin-bottom: 7px
+          line-height: 36px
+          &:last-child
+            margin-bottom: 0
+          &:before
+            content: ''
+            display: block
+            width: 18px
+            height: 2px
+            background-color: $color-orange
+            position: absolute
+            top: 18px
+            left: 0
+      a
+        background-color: rgba(225, 192, 135, .4);
+        color: #fff
+        padding: 19px 27px 18px 79px
+        position: relative
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        text-decoration: none
+        margin-bottom: 10px
+        @media (#{$max_ipad})
+          margin-top: 20px
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          top: 9px
+          left: 10px
+          background: url("../img/icons/gear.png") no-repeat center/auto 50%;
+          width: 66px
+          height: 64px
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 28px
+          right: 21px
+          background: url("../img/icons/arrow-right.png") no-repeat center/auto 50%;
+          width: 62px
+          height: 16px
+        p
+          margin: 0
+          font-family: $font-semibold
+          font-size: 18px
+        span
+          font-family: $font-light
+      .info
+        font-family: $font-light
+        font-size: 18px
+        color: $color-text-reg
+        line-height: 36px
+    .tabs-wrapper
+      margin-top: 80px
+      .tabs
+        margin: 0px
+        padding: 0px
+        list-style: none
+        div
+          display: inline-block
+          @media (#{$max_tablets})
+            margin-bottom: 50px
+          &:first-child
+              margin-right: 80px
+          &.current
+            border-bottom: 2px solid  $color-orange
+            color: #222
+            padding-bottom: 30px
+            li
+              border-bottom: none
+          li
+            background: none
+            display: inline
+            cursor: pointer
+            font-family: $playfair-reg
+            font-size: 24px
+            color: $color-text-reg
+            border-bottom: 2px dotted  #898a8b
+      div.tab-content
+        display: none
+        padding: 15px
+        border-bottom: none
+        p
+          font-family: $font-reg
+          font-size: 16px
+          span
+            font-family: $font-semibold
+          &:first-child
+            font-family: $font-light
+            font-size: 18px
+      div.tab-content
+        &.current
+          display: inherit
+    .registration
+      background-color: #fff
+      display: -webkit-flex
+      display: -moz-flex
+      display: -ms-flex
+      display: -o-flex
+      display: flex
+      flex-direction: row
+      align-items: stretch
+      margin-top: 78px
+      padding-top: 65px
+      padding-bottom: 105px
+      padding-left: 71px
+      -webkit-box-shadow:  0 3px 7px 3px #c3bcb6
+      box-shadow:  0 3px 7px 3px #c3bcb6
+      position: absolute
+      bottom: -108px
+      left: 0
+      width: 100%
+      @media (#{$max_tablets--landscape})
+        position: relative
+        margin-top: 0
+        width: auto
+        padding-left: 20px
+        flex-wrap: wrap
+        bottom: 0
+      @media (#{$max_ipad})
+        margin-left: -20px
+      div
+        height: 300px
+        width: 45%
+        position: relative
+        @media (#{$max_tablets})
+          height: 420px
+        @media (#{$max_ipad})
+          height: auto
+          width: 100%
+        &:first-child
+          border-right: 1px solid #cfcfcf
+          padding-right: 55px
+        &:last-child
+          padding-left: 126px
+          .price
+            margin-top: 9px
+          @media (#{$max_tablets})
+            padding-left: 70px
+          @media (#{$max_ipad})
+            padding-left: 0
+          button
+            left: 126px
+            @media (#{$max_tablets})
+              left: 70px
+            @media (#{$max_ipad})
+              left: 0
+        .title
+          font-family: $playfair-bold
+          font-size: 30px
+          color: $color-text-reg
+          margin-top: 0
+        .info, .price
+          font-size: 16px
+          color: $color-text-reg
+          margin-bottom: 0
+        .info
+          font-family: $font-light
+          li
+            margin-bottom: 10px
+        .price
+          font-family: $font-semibold
+          margin-top: -1px
+        button
+          position: absolute
+          bottom: 0
+          left: 0
+          background-color: #fff
+          color: $color
+          @media (#{$max_ipad})
+            position: relative

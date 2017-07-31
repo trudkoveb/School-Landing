@@ -1,0 +1,105 @@
+// Regular styles
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  position: relative
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+
+h1
+  font-family: $playfair-bold
+  font-size: 55px
+  color: $color-text-reg
+  margin: 0
+  line-height: 1.1
+  @media (#{$max_ipad})
+    font-size: 35px
+
+h2
+  font-family: $playfair-bold
+  font-size: 40px
+  color: $color
+  margin-top: 0
+  margin-bottom: 75px
+
+.wrapper
+  width: 1131px
+  margin: 0 auto
+  @media (#{$max_ipad})
+    width: auto
+  @media (#{$max_laptop})
+    width: 100%
+    padding: 0 20px
+
+
+// Button
+
+a, button, input[type=submit]
+  cursor: pointer
+
+.button-regular
+  border: 2px solid  $color-orange
+  font-family: $font-semibold
+  text-transform: uppercase
+  font-size: 16px
+  padding: 12px 28px
+  text-decoration: none
+  @media (#{$max_ipad})
+    font-size: 12px
+
+.close-btn
+  background: url(../img/icons/icon-cross.png) no-repeat center/auto 50%;
+  width: 28px
+  height: 28px
+  position: absolute
+  right: 18px
+  top: 18px
+  border: none
+  outline: none
+
+// Sliders buttons
+.owl-next, .owl-prev
+  position: absolute
+  top: 25%
+  @media (#{$max_laptop})
+    display: none!important
+
+.owl-prev
+  left: -70px
+
+.owl-next
+  right: -70px
+
+.arrow-left, .arrow-right
+  position: relative
+
+.arrow-left:after, .arrow-right:after
+  content: ''
+  display: block
+  width: 42px
+  height: 76px
+
+.arrow-left:after
+  background: url(../img/icons/owl-left.png) no-repeat center/auto 50%;
+
+.arrow-right:after
+  background: url(../img/icons/owl-right.png) no-repeat center/auto 50%;
+
+.owl-theme
+  .owl-nav
+    .owl-next, .owl-prev, .owl-next:hover, .owl-prev:hover
+      background: none
+  .owl-dots
+    .owl-dot
+      span
+        background: $color-orange
+      &.active, &:hover
+        span
+          background: transparent
+          border: 2px solid  $color-orange
